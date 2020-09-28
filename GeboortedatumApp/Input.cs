@@ -19,10 +19,7 @@ namespace GeboortedatumApp
 			Console.WriteLine("Voeg je geboorte jaar in (bv: 1992): ");
 			int jaar = Int32.Parse(Console.ReadLine());
 
-			date.AddDays(dag);
-			date.AddMonths(maand);
-			date.AddYears(jaar);
-
+			date = new DateTime(jaar, maand, dag);
 			return date;
 		}
 	}
