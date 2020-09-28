@@ -9,7 +9,8 @@ namespace GeboortedatumApp
 			//Maak objecten hier:
 			Input input = new Input();
 
-			//Hier komt het welkomst-bericht
+
+			welcom welcome = new welcom();
 
 			//Tijdelijke test-code:
 			DateTime geboortedatum = input.VraagVoorDatum();
