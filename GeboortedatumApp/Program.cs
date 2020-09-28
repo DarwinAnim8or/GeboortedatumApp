@@ -8,14 +8,17 @@ namespace GeboortedatumApp
 		{
 			//Maak objecten hier:
 			Input input = new Input();
+			AgeCalculation ageCalculation = new AgeCalculation();
 
+			welcom welcome = new welcom(); //geeft welkomst-bericht weer
 
-			welcom welcome = new welcom();
-
-			//Tijdelijke test-code:
+			//Run het programma:
 			DateTime geboortedatum = input.VraagVoorDatum();
+			int leeftijd = ageCalculation.BerekenLeeftijd(geboortedatum);
 
-			Console.WriteLine(geboortedatum.ToString());
+			//laat de leeftijd zien:
+
+			//vraag aan de gebruiker of hij wilt stoppen of doorgaan:
 		}
 	}
 }
