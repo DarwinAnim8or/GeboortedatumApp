@@ -8,7 +8,7 @@ namespace GeboortedatumApp
     {
         public Output()
         {
-            Console.WriteLine();
+            Console.WriteLine($"proficiat je bent {0} jaar !!!!");
         }
     }
 }
