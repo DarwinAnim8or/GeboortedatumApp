@@ -6,9 +6,11 @@ namespace GeboortedatumApp
 {
     class Output
     {
-        public Output()
+        
+        public Output(int age)
         {
-            Console.WriteLine($"proficiat je bent {0} jaar !!!!");
+           
+            Console.WriteLine($"proficiat je bent {age} jaar !!!!");
         }
     }
 }

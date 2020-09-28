@@ -12,13 +12,20 @@ namespace GeboortedatumApp
 
 			welcom welcome = new welcom(); //geeft welkomst-bericht weer
 
-			//Run het programma:
-			DateTime geboortedatum = input.VraagVoorDatum();
-			int leeftijd = ageCalculation.BerekenLeeftijd(geboortedatum);
+			while (true) {
+				//Run het programma:
+				DateTime geboortedatum = input.VraagVoorDatum();
+				int leeftijd = ageCalculation.BerekenLeeftijd(geboortedatum);
 
-			//laat de leeftijd zien:
-
-			//vraag aan de gebruiker of hij wilt stoppen of doorgaan:
+				Output output = new Output(leeftijd);
+				Console.WriteLine("wil je blijven door gaan j/n");
+				string doorgaan = Console.ReadLine();
+				if (doorgaan == "n") 
+				{
+					break;
+				}
+			}
+			
 		}
 	}
 }
